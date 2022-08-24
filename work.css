@@ -1,0 +1,136 @@
+body{
+  font-family: 'Open Sans', sans-serif;
+  background-image: url("./images/background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.grid-container {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: auto auto auto;
+  justify-content: center;
+  gap: 120px;
+}
+.grid-item {
+  text-align: center;
+  height: auto;
+  width: auto;
+}
+.card {
+  background:#FFFFFF;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 300px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  top : 100px ;
+  left : 37%;
+  width: 300px;
+  height: 230px;
+  border: 1px solid #FFFFFF;
+  perspective: 1000px;
+}
+.price {
+  color: grey;
+  font-size: 22px;
+}
+.card button {
+  margin-top: 24px;
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 300px;
+  font-size: 18px;
+}
+.card button:hover {
+  opacity: 0.7;
+}
+section
+{
+  padding: 20px;
+  width: 1280px;
+  margin: 40px auto;
+}
+section ul
+{
+display:flex;
+margin-bottom: 10px;
+justify-content: center;
+
+}
+section ul li
+{
+  list-style: none;
+  background: #eee;
+  padding: 12px 20px;
+  margin: 6px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  border-radius: 10px;
+  transition: 0.3s ease;
+}
+section ul li:hover
+{
+  background: #03A9F4;
+  color: #fff;
+  border-radius: 25px;
+}
+#logo {
+  display: inline-block;
+  float: left;
+}
+.flip-card {
+/*  position : absolute ;
+*/  top : 10%;
+  left : 37%;
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  perspective: 1000px;
+}
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+.flip-card-front {
+  color: black;
+}
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+img {
+  margin: -1px 1px;
+  margin-left: -1px;
+  height: 232px;
+  width: 302px;
+  object-fit: cover;
+}
+
+
+
+
+
+
